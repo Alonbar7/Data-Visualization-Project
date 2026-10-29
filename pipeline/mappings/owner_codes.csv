@@ -1,0 +1,137 @@
+owner_code,country,iso,kind,celestrak_name
+AB,Arabsat,,org,Arab Satellite Communications Organization
+ABS,Asia Broadcast Satellite,,org,Asia Broadcast Satellite
+AC,AsiaSat,,org,Asia Satellite Telecommunications Company (ASIASAT)
+ALG,Algeria,DZ,country,Algeria
+ANG,Angola,AO,country,Angola
+ARGN,Argentina,AR,country,Argentina
+ARM,Armenia,AM,country,Republic of Armenia
+ASRA,Austria,AT,country,Austria
+AUS,Australia,AU,country,Australia
+AZER,Azerbaijan,AZ,country,Azerbaijan
+BEL,Belgium,BE,country,Belgium
+BELA,Belarus,BY,country,Belarus
+BERM,Bermuda,BM,country,Bermuda
+BGD,Bangladesh,BD,country,Peoples Republic of Bangladesh
+BHR,Bahrain,BH,country,The Kingdom of Bahrain
+BHUT,Bhutan,BT,country,The Kingdom of Bhutan
+BOL,Bolivia,BO,country,Bolivia
+BRAZ,Brazil,BR,country,Brazil
+BUL,Bulgaria,BG,country,Bulgaria
+BWA,Botswana,BW,country,Republic of Botswana
+CA,Canada,CA,country,Canada
+CHBZ,China / Brazil,,joint,China/Brazil
+CHTU,China / Türkiye,,joint,China/Türkiye
+CHLE,Chile,CL,country,Chile
+CIS,Russia / USSR,RU,country,Commonwealth of Independent States (former USSR)
+COL,Colombia,CO,country,Colombia
+CRI,Costa Rica,CR,country,Republic of Costa Rica
+CZCH,Czechia,CZ,country,Czech Republic (former Czechoslovakia)
+DEN,Denmark,DK,country,Denmark
+DJI,Djibouti,DJ,country,Republic of Djibouti
+ECU,Ecuador,EC,country,Ecuador
+EGYP,Egypt,EG,country,Egypt
+ESA,ESA (European Space Agency),,org,European Space Agency
+ESRO,ESRO (European Space Research Org.),,org,European Space Research Organization
+EST,Estonia,EE,country,Estonia
+ETH,Ethiopia,ET,country,Ethiopia
+EUME,EUMETSAT,,org,European Organization for the Exploitation of Meteorological Satellites (EUMETSAT)
+EUTE,Eutelsat,,org,European Telecommunications Satellite Organization (EUTELSAT)
+FGER,France / Germany,,joint,France/Germany
+FIN,Finland,FI,country,Finland
+FR,France,FR,country,France
+FRIT,France / Italy,,joint,France/Italy
+GER,Germany,DE,country,Germany
+GHA,Ghana,GH,country,Republic of Ghana
+GLOB,Globalstar,,org,Globalstar
+GREC,Greece,GR,country,Greece
+GRSA,Greece / Saudi Arabia,,joint,Greece/Saudi Arabia
+GUAT,Guatemala,GT,country,Guatemala
+HRV,Croatia,HR,country,Republic of Croatia
+HUN,Hungary,HU,country,Hungary
+IM,Inmarsat,,org,International Mobile Satellite Organization (INMARSAT)
+IND,India,IN,country,India
+INDO,Indonesia,ID,country,Indonesia
+IRAN,Iran,IR,country,Iran
+IRAQ,Iraq,IQ,country,Iraq
+IRID,Iridium,,org,Iridium
+IRL,Ireland,IE,country,Ireland
+ISRA,Israel,IL,country,Israel
+ISRO,India,IN,country,Indian Space Research Organisation
+ISS,International Space Station,,org,International Space Station
+IT,Italy,IT,country,Italy
+ITSO,Intelsat (ITSO),,org,International Telecommunications Satellite Organization (INTELSAT)
+JPN,Japan,JP,country,Japan
+KAZ,Kazakhstan,KZ,country,Kazakhstan
+KEN,Kenya,KE,country,Republic of Kenya
+LAOS,Laos,LA,country,Laos
+LKA,Sri Lanka,LK,country,Democratic Socialist Republic of Sri Lanka
+LTU,Lithuania,LT,country,Lithuania
+LUXE,Luxembourg,LU,country,Luxembourg
+MA,Morocco,MA,country,Morroco
+MALA,Malaysia,MY,country,Malaysia
+MCO,Monaco,MC,country,Principality of Monaco
+MDA,Moldova,MD,country,Republic of Moldova
+MEX,Mexico,MX,country,Mexico
+MMR,Myanmar,MM,country,Republic of the Union of Myanmar
+MNE,Montenegro,ME,country,Montenegro
+MNG,Mongolia,MN,country,Mongolia
+MUS,Mauritius,MU,country,Mauritius
+NATO,NATO,,org,North Atlantic Treaty Organization
+NETH,Netherlands,NL,country,Netherlands
+NICO,New ICO,,org,New ICO
+NIG,Nigeria,NG,country,Nigeria
+NKOR,North Korea,KP,country,Democratic People's Republic of Korea
+NOR,Norway,NO,country,Norway
+NPL,Nepal,NP,country,Federal Democratic Republic of Nepal
+NZ,New Zealand,NZ,country,New Zealand
+O3B,O3b Networks,,org,O3b Networks
+ORB,ORBCOMM,,org,ORBCOMM
+PAKI,Pakistan,PK,country,Pakistan
+PERU,Peru,PE,country,Peru
+POL,Poland,PL,country,Poland
+POR,Portugal,PT,country,Portugal
+PRC,China,CN,country,People's Republic of China
+PRY,Paraguay,PY,country,Republic of Paraguay
+PRES,China / ESA,,joint,China / ESA
+QAT,Qatar,QA,country,State of Qatar
+RASC,RascomStar-QAF,,org,RascomStar-QAF
+ROC,Taiwan,TW,country,Taiwan (Republic of China)
+ROM,Romania,RO,country,Romania
+RP,Philippines,PH,country,Philippines (Republic of the Philippines)
+RWA,Rwanda,RW,country,Republic of Rwanda
+SAFR,South Africa,ZA,country,South Africa
+SAUD,Saudi Arabia,SA,country,Saudi Arabia
+SDN,Sudan,SD,country,Republic of Sudan
+SEAL,Sea Launch,,org,Sea Launch
+SEN,Senegal,SN,country,Republic of Senegal
+SES,SES,,org,SES
+SGJP,Singapore / Japan,,joint,Singapore/Japan
+SING,Singapore,SG,country,Singapore
+SKOR,South Korea,KR,country,Republic of Korea
+SLB,Solomon Islands,SB,country,Solomon Islands
+SPN,Spain,ES,country,Spain
+STCT,Singapore / Taiwan,,joint,Singapore/Taiwan
+SVN,Slovenia,SI,country,Slovenia
+SWED,Sweden,SE,country,Sweden
+SWTZ,Switzerland,CH,country,Switzerland
+TBD,Unknown,,unknown,To Be Determined
+THAI,Thailand,TH,country,Thailand
+TMMC,Turkmenistan / Monaco,,joint,Turkmenistan/Monaco
+TUN,Republic of Tunisia,TN,country,Republic of Tunisia
+TURK,Türkiye,TR,country,Türkiye
+UAE,United Arab Emirates,AE,country,United Arab Emirates
+UK,United Kingdom,GB,country,United Kingdom
+UKR,Ukraine,UA,country,Ukraine
+UNK,Unknown,,unknown,Unknown
+URY,Uruguay,UY,country,Uruguay
+US,United States,US,country,United States
+USBZ,United States / Brazil,,joint,United States/Brazil
+VAT,Vatican City,VA,country,Vatican City State
+VENZ,Venezuela,VE,country,Venezuela
+VTNM,Vietnam,VN,country,Vietnam
+ZWE,Zimbabwe,ZW,country,Republic of Zimbabwe
+SVK,Slovakia,SK,country,Slovakia
+KWT,Kuwait,KW,country,Kuwait
+JOR,Jordan,JO,country,Jordan
+UGA,Uganda,UG,country,Uganda

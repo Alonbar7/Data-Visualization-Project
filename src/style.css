@@ -1,0 +1,228 @@
+/* Orbit Atlas – space theme (built on Framework's "dark" theme) */
+:root {
+  --theme-background: #000;
+  --theme-background-a: #000;
+  --theme-background-b: #000;
+  --theme-background-alt: #080c14;
+  --theme-foreground: #e6edf7;
+  --theme-foreground-focus: #4cc9f0;
+  --accent: #4cc9f0;
+  --accent-2: #38bdf8;
+  --warm: #ffb454;
+  --panel: rgba(8, 14, 26, 0.72);
+  --panel-border: rgba(120, 190, 255, 0.18);
+  --muted: #8ea2bd;
+  --header-h: 48px;
+  --observablehq-max-width: 1280px;
+}
+
+html, body { background: #000; color: #e6edf7; }
+body {
+  background-image:
+    radial-gradient(1.6px 1.6px at 70px 40px, rgba(255,255,255,.9), transparent),
+    radial-gradient(1px 1px at 330px 180px, rgba(190,225,255,.9), transparent),
+    radial-gradient(1.8px 1.8px at 520px 400px, rgba(255,240,210,.9), transparent),
+    radial-gradient(1px 1px at 640px 90px, rgba(255,255,255,.8), transparent);
+  background-size: 701px 607px;
+}
+body { margin: 0 auto; }
+
+/* ---------- starfield: three tiled layers of radial-gradient dots, slow twinkle ---------- */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+body::before {
+  background-image:
+    radial-gradient(1.5px 1.5px at 20px 30px, #fff, transparent),
+    radial-gradient(1.3px 1.3px at 140px 80px, #cfe8ff, transparent),
+    radial-gradient(1.2px 1.2px at 90px 190px, #fff, transparent),
+    radial-gradient(1px 1px at 210px 150px, #bcd8ff, transparent),
+    radial-gradient(1px 1px at 60px 120px, #ffe9c7, transparent);
+  background-size: 251px 233px;
+  opacity: 0.95;
+}
+body::after {
+  background-image:
+    radial-gradient(2.2px 2.2px at 40px 60px, #fff, transparent),
+    radial-gradient(1px 1px at 300px 200px, #9fd3ff, transparent),
+    radial-gradient(2px 2px at 190px 310px, #fff, transparent),
+    radial-gradient(1px 1px at 400px 120px, #ffe9c7, transparent),
+    radial-gradient(1px 1px at 120px 410px, #d6e8ff, transparent);
+  background-size: 457px 433px;
+  animation: twinkle 7s ease-in-out infinite alternate;
+}
+@keyframes twinkle { from { opacity: 0.35; } to { opacity: 0.95; } }
+@media (prefers-reduced-motion: reduce) { body::after { animation: none; } }
+
+/* ---------- typography ---------- */
+body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+h1, h2, h3 { font-family: inherit; letter-spacing: -0.01em; }
+h1 { font-weight: 700; }
+h2 { border-bottom: 1px solid var(--panel-border); padding-bottom: 0.3rem; }
+a { color: var(--accent); }
+a:hover { color: var(--warm); }
+#observablehq-footer { color: var(--muted); }
+
+/* ---------- top navigation ---------- */
+#observablehq-header {
+  position: fixed; top: 0; left: 0; right: 0; margin: 0; height: var(--header-h); box-sizing: border-box;
+  padding: 0 1.5rem; align-items: center;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--panel-border);
+}
+.topnav { display: flex; align-items: center; gap: 0.25rem; width: 100%; }
+.topnav a {
+  color: var(--muted); text-decoration: none; padding: 0.25rem 0.8rem;
+  border-radius: 999px; font-size: 14px; letter-spacing: 0.02em;
+}
+.topnav a:hover { color: #fff; background: rgba(76, 201, 240, 0.12); }
+.topnav a[aria-current="page"] { color: #001018; background: var(--accent); font-weight: 600; }
+.topnav .brand { color: #fff; font-weight: 700; margin-right: auto; padding-left: 0; display: flex; align-items: center; gap: 0.5rem; }
+.topnav .brand:hover { background: none; color: #fff; }
+.brand-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--warm); box-shadow: 0 0 10px var(--warm); }
+
+/* ---------- panels, form controls ---------- */
+.panel {
+  background: var(--panel); border: 1px solid var(--panel-border); border-radius: 12px;
+  backdrop-filter: blur(10px); color: var(--theme-foreground);
+}
+.panel h3 { margin: 0 0 0.5rem; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); font-weight: 600; }
+button.btn, .seg button {
+  font: inherit; font-size: 13px; color: var(--theme-foreground); background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--panel-border); border-radius: 8px; padding: 0.3rem 0.7rem; cursor: pointer;
+}
+button.btn:hover, .seg button:hover { border-color: var(--accent); }
+.seg { display: inline-flex; border-radius: 8px; overflow: hidden; border: 1px solid var(--panel-border); }
+.seg button { border: 0; border-radius: 0; background: transparent; }
+.seg button + button { border-left: 1px solid var(--panel-border); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: #001018; font-weight: 600; }
+
+/* ---------- globe page ---------- */
+#observablehq-header ~ #observablehq-main { margin-top: calc(var(--header-h) + 1.5rem); }
+#observablehq-main:has(.atlas) { max-width: none; margin: 0; padding: 0; width: 100%; }
+#observablehq-header ~ #observablehq-main:has(.atlas) { margin-top: var(--header-h); }
+#observablehq-main:has(.atlas) ~ #observablehq-footer { margin-top: 1.5rem; padding: 0 1.5rem; }
+.atlas { position: relative; width: 100%; height: calc(100vh - var(--header-h)); min-height: 520px; overflow: hidden; }
+.atlas .stage { position: absolute; inset: 0; }
+.atlas .stage canvas { outline: none; }
+
+.atlas .controls {
+  position: absolute; top: 14px; left: 14px; width: 330px; max-width: calc(100vw - 28px);
+  padding: 14px 16px; display: flex; flex-direction: column; gap: 14px; z-index: 5;
+  max-height: calc(100% - 28px); overflow: auto;
+}
+.atlas .counter { font-size: 28px; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.atlas .counter small { display: block; font-size: 12px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+.atlas .counter small.hl { color: var(--warm); font-size: 15px; font-weight: 600; margin-top: 6px; }
+.atlas .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.atlas label.field { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+
+/* dual-handle range slider */
+.range { position: relative; height: 34px; }
+.range .track { position: absolute; left: 0; right: 0; top: 14px; height: 4px; border-radius: 2px; background: rgba(255, 255, 255, 0.15); }
+.range .fill { position: absolute; top: 14px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--accent), var(--warm)); }
+.range input[type="range"] {
+  position: absolute; left: 0; width: 100%; top: 6px; height: 20px; margin: 0; background: none;
+  pointer-events: none; -webkit-appearance: none; appearance: none;
+}
+.range input[type="range"]::-webkit-slider-runnable-track { background: none; height: 20px; }
+.range input[type="range"]::-moz-range-track { background: none; }
+.range input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; pointer-events: all; width: 18px; height: 18px; border-radius: 50%;
+  background: #fff; border: 2px solid var(--accent); cursor: grab; box-shadow: 0 0 8px rgba(76, 201, 240, 0.8);
+}
+.range input[type="range"]::-moz-range-thumb {
+  pointer-events: all; width: 14px; height: 14px; border-radius: 50%; background: #fff;
+  border: 2px solid var(--accent); cursor: grab;
+}
+.range-labels { display: flex; justify-content: space-between; font-size: 13px; font-variant-numeric: tabular-nums; }
+.range-labels b { color: #fff; font-weight: 600; }
+
+/* combobox */
+.combo { position: relative; }
+.combo input {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 13px; color: #fff; background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--panel-border); border-radius: 8px; padding: 0.4rem 1.8rem 0.4rem 0.6rem;
+}
+.combo input:focus { outline: none; border-color: var(--accent); }
+.combo .clear { position: absolute; right: 6px; top: 4px; background: none; border: 0; color: var(--muted); cursor: pointer; font-size: 16px; }
+.combo ul {
+  position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px; list-style: none;
+  max-height: 240px; overflow: auto; background: #070d18; border: 1px solid var(--panel-border); border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+.combo li { display: flex; justify-content: space-between; gap: 8px; padding: 4px 8px; border-radius: 5px; cursor: pointer; font-size: 13px; }
+.combo li span:last-child { color: var(--muted); font-variant-numeric: tabular-nums; }
+.combo li[aria-selected="true"], .combo li:hover { background: rgba(76, 201, 240, 0.18); }
+
+/* legend + tooltip */
+.atlas .legend { position: absolute; right: 14px; bottom: 14px; padding: 10px 14px; z-index: 4; max-width: 240px; }
+.legend .item { display: flex; align-items: center; gap: 8px; font-size: 12px; padding: 1.5px 0; }
+.legend .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; box-shadow: 0 0 6px currentColor; }
+.atlas .tooltip {
+  position: absolute; z-index: 10; pointer-events: none; padding: 10px 12px; font-size: 12.5px; line-height: 1.45;
+  min-width: 220px; max-width: 320px; display: none;
+}
+.tooltip .t-name { font-size: 15px; font-weight: 700; color: #fff; }
+.tooltip .t-sub { color: var(--muted); margin-bottom: 6px; }
+.tooltip dl { display: grid; grid-template-columns: auto 1fr; gap: 1px 10px; margin: 0; }
+.tooltip dt { color: var(--muted); }
+.tooltip dd { margin: 0; color: #fff; }
+.tooltip .live { color: #80ed99; }
+.tooltip .approx { color: var(--warm); }
+.atlas .hint { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); font-size: 12px; color: var(--muted); z-index: 3; pointer-events: none; text-align: center; }
+.atlas .loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); z-index: 20; background: #000; }
+.atlas details summary { cursor: pointer; font-size: 12px; color: var(--muted); }
+.toggle { display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; }
+
+@media (max-width: 760px) {
+  .atlas .controls { width: auto; right: 14px; max-height: 46%; }
+  .atlas .legend { display: none; }
+  .atlas .counter { font-size: 22px; }
+}
+
+/* ---------- stats / about pages ---------- */
+.stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1.2rem 0 1.5rem; }
+.stat { padding: 14px 16px; border-radius: 12px; background: var(--panel); border: 1px solid var(--panel-border); }
+.stat .v { font-size: 30px; font-weight: 700; color: #fff; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.stat .l { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.stat:nth-child(odd) .v { color: var(--accent); }
+.stat:nth-child(2) .v { color: var(--warm); }
+.chart-card { padding: 16px 18px; margin: 1rem 0 2rem; border-radius: 14px; background: var(--panel); border: 1px solid var(--panel-border); }
+.chart-card h2 { margin-top: 0; border: 0; }
+.chart-card .note { color: var(--muted); font-size: 13px; margin: 0.2rem 0 0.8rem; }
+.controls-row { display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: flex-end; margin-bottom: 8px; }
+.controls-row form { margin: 0; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 8px 0 0; }
+.chart-legend button {
+  display: inline-flex; align-items: center; gap: 6px; background: none; border: 0; color: var(--theme-foreground);
+  font: inherit; font-size: 12.5px; cursor: pointer; padding: 2px 4px; border-radius: 6px;
+}
+.chart-legend button:hover { background: rgba(255, 255, 255, 0.08); }
+.chart-legend .sw { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+.chart-legend button.off { opacity: 0.3; }
+.donut-wrap { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; }
+.donut-wrap svg { overflow: visible; }
+.donut-center { font-variant-numeric: tabular-nums; }
+.about-body { max-width: 760px; }
+.about-body table { width: 100%; font-size: 14px; }
+.about-body code { background: rgba(255, 255, 255, 0.08); border-radius: 4px; padding: 0 4px; }
+.cov-bar { height: 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.12); overflow: hidden; min-width: 140px; }
+.cov-bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--accent), var(--warm)); }
+
+/* page padding (Framework's own inset assumed the default body margin) */
+#observablehq-center { margin: 0; padding: 0 1.5rem; }
+#observablehq-center:has(.atlas) { padding: 0; }
+#observablehq-main { max-width: 1100px; margin-left: auto; margin-right: auto; }
+.chart-card form, .chart-card label, .chart-card form label { color: var(--theme-foreground); }
+.chart-card input[type="number"], .chart-card select {
+  background: #0b1220; color: #fff; border: 1px solid var(--panel-border); border-radius: 6px; padding: 2px 6px;
+}
+.chart-card input[type="radio"], .chart-card input[type="range"] { accent-color: var(--accent); }
+h1 a[href], h2 a[href], h3 a[href] { color: inherit; text-decoration: none; }
+h1 a[href]:hover, h2 a[href]:hover, h3 a[href]:hover { color: inherit; text-decoration: none; }

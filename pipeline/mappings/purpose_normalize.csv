@@ -1,0 +1,21 @@
+source,pattern,category
+ucs_detail,"Meteorolog|Weather",Weather
+ucs_detail,"Military|Reconnaissance|Signals Intelligence|SIGINT|Electronic Intelligence|Missile Warning|Early Warning|Surveillance",Military/Intelligence
+ucs_detail,"Space Station|Crewed|Cargo Resupply",Space Station/Crewed
+ucs_purpose,"^Meteorolog|^Weather",Weather
+ucs_purpose,"^Surveillance",Military/Intelligence
+ucs_purpose,"^Navigation|^Satellite Positioning",Navigation
+ucs_purpose,"^Communications|^Maritime Tracking|^Mobile Satellite",Communications
+ucs_purpose,"^Earth Observation|^Earth Science|^Earth/Space Observation",Earth Observation
+ucs_purpose,"^Space Science|^Space Observation",Science
+ucs_purpose,"^Technology|^Mission Extension|^Platform|^Educational",Technology Demonstration
+ucs_purpose,"^Unknown",
+gcat_category,"^(COM/MET|MET)",Weather
+gcat_category,"^SS",Space Station/Crewed
+gcat_category,"^(NAV)",Navigation
+gcat_category,"^(COM)",Communications
+gcat_category,"^(SIG|EW|WEAPON|TARG)",Military/Intelligence
+gcat_category,"^(IMG|EOSCI|GEOD)",Earth Observation
+gcat_category,"^(SCI|PLAN|AST|MGRAV|BIO)",Science
+gcat_category,"^(TECH)",Technology Demonstration
+gcat_category,"^(CAL)",Other

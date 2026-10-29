@@ -1,0 +1,42 @@
+pattern,operator
+"(?i)^space\s?x\b|^spacex",SpaceX
+"(?i)^SpaceX/",SpaceX
+"(?i)oneweb",OneWeb (Eutelsat)
+"(?i)^planet labs|^planet$",Planet Labs
+"(?i)^spire",Spire Global
+"(?i)^swarm tech",Swarm Technologies (SpaceX)
+"(?i)^iridium",Iridium
+"(?i)^globalstar",Globalstar
+"(?i)^orbcomm",ORBCOMM
+"(?i)^intelsat",Intelsat
+"(?i)^ses\b",SES
+"(?i)^eutelsat",Eutelsat
+"(?i)^amazon|^kuiper",Amazon (Kuiper)
+"(?i)chinese ministry of national defense|^PLA\b|people's liberation army",China MoD (PLA)
+"(?i)^china aerospace science and technology|^CAST\b|china academy of space tech",CAST (China)
+"(?i)chang guang",Chang Guang Satellite Technology
+"(?i)^casc$|china aerospace$|zhongguo hangtian",CASC (China)
+"(?i)^cnsa",CNSA (China)
+"(?i)^national reconnaissance|^NRO\b",NRO (US)
+"(?i)^nasa|goddard|jet propulsion|^JPL",NASA
+"(?i)^noaa|national oceanic",NOAA
+"(?i)^isro|indian space research",ISRO
+"(?i)^esa\b|european space agency",ESA
+"(?i)^roscosmos|^rosk$",Roscosmos
+"(?i)^(MO|RVSN|GUKOS|GUKOSR|UNKS|KVR|PVO|VVKOV|VKS|VMF|GUKOS RVSN|Russian MoD)$",Russian MoD
+"(?i)ministry of defen[cs]e|department of defense|us air force|space force|USAF|US Navy|\bus army|^AFSC|^AFS",Defence / Military (various)
+"(?i)^unknown|^-$|^tbd$",
+"(?i)zhongguo xingwang|china satnet",China SatNet
+"(?i)yuanxin|spacesail",Spacesail (Shanghai)
+"(?i)^USSF|^space force",US Space Force
+"(?i)^geespace|^geely",Geespace (Geely)
+"(?i)^VS SSSR|^MVD$",Russian MoD
+"(?i)^(OKB-10|ISS Reshetnev)",ISS Reshetnev
+"(?i)^(TsKBEM|OKB-1|NPO Energiya|RKK Energiya)",RSC Energia
+"(?i)^TsSKB",TsSKB Progress
+"(?i)^MSvyaz",Russian Ministry of Communications
+"(?i)^DoD$",Defence / Military (various)
+"(?i)^USN$",US Navy
+"(?i)^DOC$",NOAA
+"(?i)^One Web",OneWeb (Eutelsat)
+"(?i)^MO SSSR",Russian MoD

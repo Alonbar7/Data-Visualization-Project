@@ -1,0 +1,6 @@
+pandas>=2.2
+pyarrow>=15
+requests>=2.31
+sgp4>=2.23
+numpy>=1.26
+openpyxl>=3.1

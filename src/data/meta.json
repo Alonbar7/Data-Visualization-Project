@@ -1,0 +1,148 @@
+{
+ "snapshot_date": "2026-10-29",
+ "snapshot_time": "2026-10-29T14:54:36+00:00",
+ "snapshot_day": 25227,
+ "epoch": "1957-10-04",
+ "no_decay_day": 99999,
+ "sources": [
+  {
+   "id": "satcat",
+   "name": "CelesTrak SATCAT",
+   "url": "https://celestrak.org/satcat/",
+   "file": "satcat.csv",
+   "license": "Public; space-track.org / CelesTrak data",
+   "citation": "T.S. Kelso, CelesTrak SATCAT (celestrak.org/satcat).",
+   "retrieved": "2026-10-29"
+  },
+  {
+   "id": "gp",
+   "name": "CelesTrak GP (OMM) – active satellites",
+   "url": "https://celestrak.org/NORAD/documentation/gp-data-formats.php",
+   "file": "gp_active.json",
+   "license": "Public",
+   "citation": "T.S. Kelso, CelesTrak current GP element sets (celestrak.org/NORAD/elements).",
+   "retrieved": null
+  },
+  {
+   "id": "gcat",
+   "name": "GCAT – General Catalog of Artificial Space Objects",
+   "url": "https://planet4589.org/space/gcat/",
+   "file": "gcat_satcat.tsv",
+   "license": "CC-BY 4.0",
+   "citation": "Data from GCAT (J. McDowell, planet4589.org/space/gcat).",
+   "retrieved": "2026-10-29"
+  },
+  {
+   "id": "ucs",
+   "name": "UCS Satellite Database (frozen 1 May 2023)",
+   "url": "https://www.ucs.org/resources/satellite-database",
+   "file": "ucs.xlsx",
+   "license": "Union of Concerned Scientists, free for non-commercial use with attribution",
+   "citation": "Union of Concerned Scientists, UCS Satellite Database, current through 1 May 2023.",
+   "retrieved": "2026-10-29"
+  }
+ ],
+ "ucs_frozen": "2023-05-01",
+ "display": {
+  "k_scale": 0.3,
+  "r_earth_km": 6378.137
+ },
+ "totals": {
+  "payloads": 27908,
+  "in_orbit": 20246,
+  "active": 17347,
+  "countries": 103,
+  "organizations": 26,
+  "sgp4_positions": 0,
+  "gp_available": false
+ },
+ "coverage": {
+  "all": {
+   "n": 27908,
+   "operator_known_pct": 95.2,
+   "purpose_known_pct": 98.0
+  },
+  "in_orbit": {
+   "n": 20246,
+   "operator_known_pct": 96.7,
+   "purpose_known_pct": 98.2
+  },
+  "launched_2023_plus": {
+   "n": 13720,
+   "operator_known_pct": 95.7,
+   "purpose_known_pct": 96.8
+  },
+  "in_orbit_launched_2023_plus": {
+   "n": 12810,
+   "operator_known_pct": 96.3,
+   "purpose_known_pct": 97.4
+  }
+ },
+ "palettes": {
+  "purpose": {
+   "Communications": "#4cc9f0",
+   "Earth Observation": "#80ed99",
+   "Navigation": "#ffd166",
+   "Weather": "#a78bfa",
+   "Science": "#f472b6",
+   "Technology Demonstration": "#fb923c",
+   "Military/Intelligence": "#ef4444",
+   "Space Station/Crewed": "#ffffff",
+   "Other": "#94a3b8",
+   "Unknown": "#475569"
+  },
+  "orbit_class": {
+   "LEO": "#4cc9f0",
+   "MEO": "#ffd166",
+   "GEO": "#f472b6",
+   "HEO": "#a3e635",
+   "Unknown": "#475569"
+  },
+  "country": {
+   "United States": "#4cc9f0",
+   "Russia / USSR": "#f72585",
+   "China": "#ffd166",
+   "United Kingdom": "#80ed99",
+   "Japan": "#a78bfa",
+   "France": "#fb923c",
+   "India": "#2dd4bf",
+   "Germany": "#f87171",
+   "Italy": "#60a5fa",
+   "ESA (European Space Agency)": "#e879f9",
+   "Intelsat (ITSO)": "#a3e635",
+   "Other": "#6b7280",
+   "Unknown": "#475569"
+  },
+  "operator_group": {
+   "SpaceX": "#4cc9f0",
+   "Russian MoD": "#f72585",
+   "Defence / Military (various)": "#ffd166",
+   "Planet Labs": "#80ed99",
+   "OneWeb (Eutelsat)": "#a78bfa",
+   "NASA": "#fb923c",
+   "Amazon (Kuiper)": "#2dd4bf",
+   "NRO (US)": "#f87171",
+   "China MoD (PLA)": "#60a5fa",
+   "RSC Energia": "#e879f9",
+   "China SatNet": "#a3e635",
+   "Spacesail (Shanghai)": "#fbbf24",
+   "Spire Global": "#38bdf8",
+   "Roskosmos": "#fb7185",
+   "Swarm Technologies (SpaceX)": "#c4b5fd",
+   "Other": "#6b7280",
+   "Unknown": "#475569"
+  }
+ },
+ "purposes": [
+  "Communications",
+  "Earth Observation",
+  "Navigation",
+  "Weather",
+  "Science",
+  "Technology Demonstration",
+  "Military/Intelligence",
+  "Space Station/Crewed",
+  "Other",
+  "Unknown"
+ ]
+}

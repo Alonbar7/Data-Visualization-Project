@@ -1,0 +1,8 @@
+raw/
+.venv/
+node_modules/
+dist/
+**/.observablehq/cache/
+__pycache__/
+*.pyc
+.DS_Store

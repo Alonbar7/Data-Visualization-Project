@@ -1,0 +1,81 @@
+pattern,operator,purpose
+"^STARLINK",SpaceX,Communications
+"^ONEWEB",OneWeb (Eutelsat),Communications
+"^(KUIPER|AMAZON LEO)",Amazon (Kuiper),Communications
+"^IRIDIUM",Iridium,Communications
+"^GLOBALSTAR",Globalstar,Communications
+"^ORBCOMM",ORBCOMM,Communications
+"^(FLOCK|DOVE|SKYSAT|PELICAN|SUPERDOVE|SUPER DOVE)",Planet Labs,Earth Observation
+"^LEMUR",Spire Global,Earth Observation
+"^(SWARM|SPACEBEE)",Swarm Technologies (SpaceX),Communications
+"^(QIANFAN|SPACESAIL)",Spacesail (Shanghai),Communications
+"^(HULIANWANG|GUOWANG|SATNET)",China SatNet,Communications
+"^(GEESAT|GEELY)",Geespace (Geely),Communications
+"^ICEYE",ICEYE,Earth Observation
+"^(CAPELLA|ACADIA)",Capella Space,Earth Observation
+"^UMBRA",Umbra,Earth Observation
+"^BLACKSKY|^GLOBAL-[0-9]",BlackSky,Earth Observation
+"^(HAWK|HAWKEYE)",HawkEye 360,Earth Observation
+"^SATELLOGIC|^NEWSAT|^NUSAT",Satellogic,Earth Observation
+"^(WORLDVIEW|GEOEYE|QUICKBIRD|IKONOS)",Maxar,Earth Observation
+"^(PLEIADES|SPOT|CSO)\b",Airbus / CNES,Earth Observation
+"^(JILIN)",Chang Guang Satellite Technology,Earth Observation
+"^YAOGAN",China MoD (PLA),Military/Intelligence
+"^(SHIJIAN|TJS|TONGXIN JISHU)",CAST (China),Technology Demonstration
+"^(GPS|NAVSTAR)",US Space Force,Navigation
+"^GALILEO|^GSAT0",European Union (Galileo),Navigation
+"^(BEIDOU|COMPASS)",China (BeiDou),Navigation
+"^GLONASS",Russian MoD,Navigation
+"^(IRNSS|NAVIC)",ISRO,Navigation
+"^(QZS|MICHIBIKI)",Japan Cabinet Office,Navigation
+"^(NOAA|GOES|DMSP|SUOMI|JPSS)",NOAA,Weather
+"^(METEOSAT|METOP|MTG)",EUMETSAT,Weather
+"^(FENGYUN|FY-)",China Meteorological Administration,Weather
+"^HIMAWARI",JMA (Japan),Weather
+"^(METEOR|ELEKTRO)",Roscosmos,Weather
+"^(INSAT|GSAT|CARTOSAT|RESOURCESAT|RISAT|OCEANSAT|EOS-)",ISRO,
+"^LANDSAT",NASA / USGS,Earth Observation
+"^SENTINEL",ESA,Earth Observation
+"^TERRASAR|^TANDEM-X",DLR / Airbus,Earth Observation
+"^COSMO-SKYMED|^COSMO SKYMED",Italian Space Agency / MoD,Earth Observation
+"^(INTELSAT|IS-)",Intelsat,Communications
+"^(SES-|ASTRA|O3B)",SES,Communications
+"^EUTELSAT",Eutelsat,Communications
+"^(TELESAT|ANIK|NIMIQ)",Telesat,Communications
+"^(VIASAT|WILDBLUE)",Viasat,Communications
+"^(INMARSAT|ALPHASAT)",Inmarsat,Communications
+"^THURAYA",Thuraya,Communications
+"^ARABSAT",Arabsat,Communications
+"^ASIASAT",AsiaSat,Communications
+"^(ECHOSTAR|DIRECTV|SIRIUS|XM-|SXM)",EchoStar / SiriusXM,Communications
+"^(TIANTONG|CHINASAT|ZHONGXING|APSTAR|SINOSAT)",China (commercial comms),Communications
+"^(TIANLAI|TIANHUI|TIANTUO|TIANQIN)",CAST (China),
+"^(YAMAL|EXPRESS|GONETS|LUCH|MERIDIAN|BLAGOVEST)",Russian Satellite Communications Co. / MoD,Communications
+"^(KOREASAT|ANASIS|KOMPSAT|CHOLLIAN)",South Korea,
+"^(ARTEMIS|GENESIS)\b",,
+"^(CYGNUS|DRAGON)\b|^CREW DRAGON|^CARGO DRAGON|^STARLINER|^HTV|^DREAM CHASER",,Space Station/Crewed
+"^(ISS|ZARYA|UNITY|ZVEZDA|POISK|RASSVET|NAUKA|PIRS|HARMONY|TRANQUILITY|COLUMBUS|KIBO|DESTINY|QUEST|LEONARDO|CUPOLA|PROGRESS|SOYUZ|SHENZHOU|TIANZHOU|TIANGONG|TIANHE|WENTIAN|MENGTIAN|CSS|MIR)\b",,Space Station/Crewed
+"^SALYUT|^SKYLAB|^GEMINI|^APOLLO|^VOSTOK|^VOSKHOD|^MERCURY",,Space Station/Crewed
+"^(USA)[ -][0-9]+",US Government (classified),Military/Intelligence
+"^(COSMOS|KOSMOS)[ -][0-9]+",Russian MoD,Military/Intelligence
+"^(OPS|OSCAR|ISIS)[ -]",,
+"^(NROL|LACROSSE|KH-|TOPAZ|ORION|MENTOR|TRUMPET|MISTY|ONYX)",NRO (US),Military/Intelligence
+"^(SBIRS|DSP|AEHF|MILSTAR|WGS|MUOS|SDS|GSSAP|STSS|X-37)",US Space Force,Military/Intelligence
+"^(TRANSPORTER|BANDWAGON)",,
+"CUBESAT|CUBE-SAT|^CUBE\b|[ -]?[0-9]U\b|CUBEBUG|PICOSAT|NANOSAT|TESTSAT|DEMOSAT",,Technology Demonstration
+"^(AMSAT|FUNCUBE|AO-|FO-|OSCAR|LILACSAT|BISON|CAS-|XW-|HO-|UWE|SPINSAT)",Amateur / University,Technology Demonstration
+"^TIANLAI",CAST (China),
+"^(OBJECT [A-Z]+)$",,
+"^MOLNIYA",Russian MoD,Communications
+"^IRIDE",Italian Space Agency / ESA,Earth Observation
+"^PIESAT",PIESAT Information Technology,Earth Observation
+"^TEVEL",Herzliya Science Center (Israel),Technology Demonstration
+"^RADIO[ -]",Amateur / University,Technology Demonstration
+"^SECOR",US Army,Science
+"^NADEZHDA",Russian MoD,Navigation
+"^(HAIYANG|HY-)",China (Ministry of Natural Resources),Earth Observation
+"^GGSE",US Navy,Technology Demonstration
+"^CUBY",Amateur / University,Technology Demonstration
+"^OKEAN",Roscosmos,Earth Observation
+"^ESSAIM",French MoD (DGA),Military/Intelligence
+"^TRANSPORTER|^BANDWAGON",,Other
